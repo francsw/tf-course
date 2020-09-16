@@ -17,7 +17,7 @@ resource "aws_instance" "test" {
   }
 
   iam_instance_profile = aws_iam_instance_profile.testbox.name
-#  user_data = data.template_cloudinit_config.config.rendered
+  user_data = data.template_cloudinit_config.config.rendered
 
   tags = local.common_tags
 }
